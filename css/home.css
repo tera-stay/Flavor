@@ -272,7 +272,6 @@ body{
 /*ここからフッターまでメイン要素*/
 main{
     margin: 2em auto;  
-    padding: 1em;
     width: 95%; /*幅の調節*/
     color: #666666; /*文字色*/
     background-color: #f7f7f7; /*背景色*/
