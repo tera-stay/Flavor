@@ -1,0 +1,195 @@
+@charset "UTF-8";
+body{
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+    color: #000;
+    background: linear-gradient(rgb(255, 187, 77),rgb(255, 208, 108));
+}
+a,
+a:link {
+    color: #3585b7;
+}
+a:visited {
+    color: #6252B7;
+}
+a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+/* ヘッダー */
+header {
+    margin-top: calc(((100vw - 100%) / 2)* -1);
+    margin-left: calc(((100vw - 100%) / 2)* -1);
+    margin-right: calc(((100vw - 100%) / 2)* -1);
+    padding-bottom: 20px;
+    color: rgb(255, 255, 255);
+}
+header .top{
+    display: flex;
+}
+header h1 {
+    margin: 25px 0 0 30px;
+}
+header nav {
+    margin: 0 0 0 auto;;
+}
+/*ヘッダーメニュー*/
+header nav ul {
+    list-style-type: none;
+    display:flex;
+    margin: 25px ;
+    padding: 0;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited{
+    display:block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+    color: #888;
+}
+.guide h2{
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guide p{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*サイト概要のボタンのスタイリング*/
+.overview{
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+.overview a{
+    text-decoration: none;
+    color:  #ffffff;
+}
+
+.button {
+    display: inline-block;
+    width: 180px;
+    height:50px;
+    text-align: center;
+    background-color: rgb(255, 187, 77);
+    font-size: 20px;
+    line-height: 52px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-radius: 14px;
+  }
+  .button:after{
+    width: 100%;
+    height: 0;
+    content:"";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background : #FFF;
+    opacity: 0;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: .2s;
+    z-index: -1;
+  }
+  .button:hover{
+    color: #060801;
+  }
+  .button:hover:after{
+    height: 240%;
+    opacity: 1;
+  }
+  .button:active:after{
+    height: 340%;
+    opacity: 1;
+  }
+
+/*チェックボックスの非表示*/
+#navTgl {
+    display: none;
+}
+
+/*ページ遷移*/
+body{
+    transition: all 1s;
+}
+
+.bodyfadeout{
+    opacity: 0;
+}
+
+/*テキストリンクのホバー*/
+
+
+.menu a {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+}
+.menu a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.menu a:hover::after {
+    width: 100%;
+}
+
+
+
+/*ここからフッターまでメイン要素*/
+main{
+    margin: 2em auto;  
+    padding: 1em;
+    width: 95%; /*幅の調節*/
+    color: #666666; /*文字色*/
+    background-color: #f7f7f7; /*背景色*/
+    border-radius: 8px; /*角の丸み*/
+}
+
+figure.IconBox{
+
+    text-align: center;
+}
+
+
+
+
+
+
+/*フッター*/
+footer{
+    clear: both;
+    color: rgba(255,255,255);
+    padding: 20px;
+    margin-bottom: calc(((100vw - 100%) / 2)* -1);
+    margin-left: calc(((100vw - 100%) / 2)* -1);
+    margin-right: calc(((100vw - 100%) / 2)* -1);
+}
+
+footer address{
+    text-align: right;
+    color: #ffffff
+}

@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body{
+    line-height: 1.6;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+    color: #000;
+    background: linear-gradient(rgb(255, 187, 77),rgb(255, 208, 108));
+}
+a,
+a:link {
+    color: #3585b7;
+}
+a:visited {
+    color: #6252B7;
+}
+a:hover {
+    text-decoration: none;
+    color: #555;
+}
+
+/* ヘッダー */
+header {
+    color: rgb(255, 255, 255);
+    margin-top: calc(((100vw - 100%) / 2)* -1);
+    margin-left: calc(((100vw - 100%) / 2)* -1);
+    margin-right: calc(((100vw - 100%) / 2)* -1);
+    display: flex;
+}
+header h1 {
+    margin: 25px 0 0 30px;
+}
+header nav {
+    margin: 0 0 0 auto;;
+}
+
+/*ヘッダーメニュー*/
+header nav ul {
+    list-style-type: none;
+    display:flex;
+    margin: 25px ;
+    padding: 0;
+}
+header nav ul li a,
+header nav ul li a:link,
+header nav ul li a:visited{
+    display:block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+nav ul li a:hover{
+    color: #888;
+}
+
+/*テキストリンクのホバー*/
+
+
+a {
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+  }
+  a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #ffffff;
+    transition: .3s;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  a:hover::after {
+    width: 100%;
+  }
+
+
+/*チェックボックスの非表示*/
+#navTgl {
+    display: none;
+}
+
+
+/*プロフィールの囲み枠、センタリング*/
+.profile {
+    margin: 2em auto;  
+    padding: 1em;
+    width: 95%; /*幅の調節*/
+    color: #666666; /*文字色*/
+    background-color: #f7f7f7; /*背景色*/
+    border-radius: 8px; /*角の丸み*/
+}
+
+.profile h2{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile img{
+    display: block;
+    margin:auto;
+
+}
+.profile h3{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*how markupのスタイリング*/
+.howmarkup {
+    margin: 2em auto;  
+    padding: 1em ;
+    padding-bottom: 70px;
+    width: 95%; /*幅の調節*/
+    color: #666666; /*文字色*/
+    background-color: #f7f7f7; /*背景色*/
+    border-radius: 8px; /*角の丸み*/
+    
+}
+
+.howmarkup h2{
+    padding-top: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howmarkup img{
+    margin-left: 150px;
+    float:left;
+}
+
+.howmarkup h3{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*howstylingのスタイリング*/
+.howstyling {
+    margin: 2em auto;  
+    padding: 1em ;
+    padding-bottom: 70px;
+    width: 95%; /*幅の調節*/
+    color: #666666; /*文字色*/
+    background-color: #f7f7f7; /*背景色*/
+    border-radius: 8px; /*角の丸み*/
+}
+.howstyling img{
+    margin-right: 150px;
+    float: right;
+}
+
+.howstyling h2{
+    padding-top: 30px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howmarkup h3{
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*フッター*/
+footer{
+    clear: both;
+    color: rgba(255,255,255);
+    padding: 20px;
+    margin-bottom: calc(((100vw - 100%) / 2)* -1);
+    margin-left: calc(((100vw - 100%) / 2)* -1);
+    margin-right: calc(((100vw - 100%) / 2)* -1);
+}
+
+footer address{
+    text-align: right;
+    color: #ffffff
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>Weather Report</title> 
+        
+        <link rel="stylesheet" type="text/css" href="css/weather.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    </head>
+
+    <body class="home">
+        <header>
+            <h1>Flavor</h1> 
+            <input type ="checkbox" id = "navTgl">
+        <label for = "navTgl" class = "open"><span></span></label>
+        <label for="navTgl" class="close"></label>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href = "weather.html">Weather</a></li>
+                <li><a href = "amuse.html">Library</a></li>
+                <li><a href = "query.html">Contact</a></li>
+                <li><a href = "who.html">Who?</a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <div id="wrapper">
+            <div class="input">
+                <input type="text" class="inputValue">
+                <input type="submit" value="Submit">
+            </div>
+
+            <div class="location">
+                <h1 class="location-timezone">Timezone</h1>
+                <p>Icon</p>
+            </div>
+
+            <div class="temperature">
+                <div class="degree-section">
+                <h2 class="degree">34</h2>
+                <span>F</span>
+            </div>
+                <div class="temperature-description">Its friggin cold</div>
+
+            </div>
+        </div>
+        <script src="js/weather.js"></script>
+        <footer>
+            <p>4回目の演習課題 u316075 作山創太朗</p>
+            <script>
+                document.write("作成日:"+ document.lastModified);
+            </script>
+                
+            <address>Copyright(C) 2020 Allright Reserved.</address>
+        </footer>
+        </body>
+
+</html>
