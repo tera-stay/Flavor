@@ -120,7 +120,18 @@ input[type="text"]{
     font-weight: bold;
     font-size: 24px;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    height: 80px;
+    width: 150px;
+    background: #e7e7e7;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    border-radius: 10px;
 }
 
 .location, 
