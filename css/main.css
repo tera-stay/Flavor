@@ -18,12 +18,122 @@ a:hover {
     color: #555;
 }
 
+/*メディアクエリ*/
+@media screen and (max-width: 599px) and (orientation: portrait), screen and(min-width: 361px) and (max-width: 767px) and (orientation: landscape){
+    #navTgl {
+        display: none;
+    }
+    .overview{
+        display: none;
+    }
+
+    label{
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .open {
+        z-index: 2;
+        width: 60px;
+        height: 48px;
+        transition: background .5s, transform .5s cubic-bezier(0.76,0.52,0.29,1.25);
+    }
+    .open::before,
+    .open::after{
+        content: "";
+    }
+    .open span,
+    .open::before,
+    .open::after{
+        content: "";
+        position: absolute;
+        top: calc(50% - 1px);
+        left: 30%;
+        width: 40%;
+        border-bottom: 2px solid black;
+        transition: transform .5s cubic-bezier(0.76,0.52,0.29,1.25);
+    }
+    .open::before{
+        transform: translateY(-8px);
+    }
+    .open::after{
+        transform: translateY(8px);
+    }
+    .close{
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        transition: background .5s;
+    
+    }
+    #navTgl:checked + .open span{
+        transform: scaleX(0);
+    }
+    #navTgl:checked + .open::before{
+        transform: rotate(45deg);
+    }
+    #navTgl:checked + .open::after{
+        transform:rotate(-45deg);
+    }
+    #navTgl:checked ~ .close{
+        background: rgb(255, 187, 77);
+    }
+    
+    
+    
+    .top .menu{
+        z-index: 1;
+        position: fixed;
+        overflow: auto;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 6%;
+        margin: 0;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+        transition: transform .5s cubic-bezier(0.33, 1.01, 0.33, 0.97);
+    }
+    .menu h2,
+    .top .menu a {
+        color: white;
+        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue","游ゴシック Medium",YuGothic,YuGothicM,"Hiragino kaku Gothic ProN",Meiryo,sans-serif;
+    }
+    .menu h2 {
+        text-align: center;
+    }
+    .menu ul {
+        display: block;
+        padding: 0;
+        text-align: center;
+        width: 250px;
+        margin: 0 auto;
+    }
+    .menu li {
+        font-size: 20px;
+        line-height: 3.6;
+    }
+    .menu a {
+        display: block;
+        padding: 1.4em 2em;
+        text-decoration: inherit;
+        transition: background .5s;
+    }
+   
+    #navTgl:checked ~ .menu {
+        transform: none;
+    }
+} 
+
 /* ヘッダー */
 header {
+    padding-bottom: 20px;
     color: rgb(255, 255, 255);
-    margin-top: calc(((100vw - 100%) / 2)* -1);
-    margin-left: calc(((100vw - 100%) / 2)* -1);
-    margin-right: calc(((100vw - 100%) / 2)* -1);
+}
+header .top{
     display: flex;
 }
 header h1 {
@@ -32,7 +142,6 @@ header h1 {
 header nav {
     margin: 0 0 0 auto;;
 }
-
 /*ヘッダーメニュー*/
 header nav ul {
     list-style-type: none;
