@@ -18,6 +18,7 @@ a:hover {
     color: #555;
 }
 
+
 /*メディアクエリ*/
 @media screen and (max-width: 599px) and (orientation: portrait), screen and(min-width: 361px) and (max-width: 767px) and (orientation: landscape){
     #navTgl {
@@ -219,11 +220,15 @@ a {
     justify-content: center;
     align-items: center;
 }
-.contact a{
+.contact{
     text-align: center;
     margin: 20px auto;
 }
 
+.contact a{
+    font-size: 20px;
+    color:  #555;
+}
 
 /*フッター*/
 footer{

@@ -18,6 +18,10 @@ a:hover {
     color: #555;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*メディアクエリ*/
 @media screen and (max-width: 599px) and (orientation: portrait), screen and(min-width: 361px) and (max-width: 767px) and (orientation: landscape){
     #navTgl {
