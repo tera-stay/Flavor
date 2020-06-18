@@ -287,9 +287,6 @@ footer{
     clear: both;
     color: rgba(255,255,255);
     padding: 20px;
-    margin-bottom: calc(((100vw - 100%) / 2)* -1);
-    margin-left: calc(((100vw - 100%) / 2)* -1);
-    margin-right: calc(((100vw - 100%) / 2)* -1);
 }
 
 footer address{
