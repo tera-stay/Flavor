@@ -170,6 +170,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+
 .guide p{
     font-size: 20px;
     display: flex;
@@ -179,14 +180,26 @@ nav ul li a:hover{
 
 /*サイト概要のボタンのスタイリング*/
 .overview{
-    text-align: center;
-    padding: 20px;
+    margin: 2em auto;  
+    padding: 6em ;
+    padding-bottom: 70px;
     position: relative;
 }
 .overview a{
     text-decoration: none;
     color:  #ffffff;
+    margin-left: 300px;
 }
+.overview i{
+    margin-left: 360px;
+    float: left;
+}
+.overview p{
+    margin-left: 700px;
+    font-size: 20px;
+}
+
+
 
 .button {
     display: inline-block;
