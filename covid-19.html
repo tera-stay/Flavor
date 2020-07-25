@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>Weather Report</title> 
+        
+        <link rel="stylesheet" type="text/css" href="css/covid-19.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+        <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="jquery.japan-map.min.js"></script>
+    </head>
+
+    <body class="home">
+        <header>
+            <div class="top">
+                <h1>Flavor</h1> 
+                <input type ="checkbox" id = "navTgl">
+            <label for = "navTgl" class = "open"><span></span></label>
+            <label for="navTgl" class="close"></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href = "weather.html">Weather</a></li>
+                    <li><a href = "covid-19.html">covid-19</a></li>
+                    <li><a href = "query.html">Contact</a></li>
+                    <li><a href = "who.html">Who?</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+        <div id="wrapper">
+            <div class="guide">
+                <p>国内のcovid-19に関するデータを取得します</p>
+                <p>地図から見たいデータの都道府県を選択してください</p>
+            </div>
+            
+
+            <div class ="display">
+                
+            </div>
+            <div id="map-container"></div>
+        </div>
+        <script src="js/covid-19.js"></script>
+        <script src="js/map.js"></script>
+        <footer>
+            <p>11回目の演習課題 u316075 作山創太朗</p>
+            <script>
+                document.write("作成日:"+ document.lastModified);
+                
+            </script>
+            
+                
+            <address>Copyright(C) 2020 Allright Reserved.</address>
+        </footer>
+        </body>
+
+</html>
