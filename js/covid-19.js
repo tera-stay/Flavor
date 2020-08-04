@@ -5,6 +5,7 @@ request.responseType = 'json';
 
 request.onload = function () {
     var data = this.response;
+    
     console.log(data);
 };
 
