@@ -34,16 +34,17 @@
             <div class="guide">
                 <p>国内のcovid-19に関するデータを取得します</p>
                 <p>地図から見たいデータの都道府県を選択してください</p>
+                <p>データは二時間ごとに更新されます</p>
             </div>
             
 
             <div class ="display">
-                <h1 class="name"></h1>
-                <p class="total"></p>
+                <p id="name"></p>
+                <p id="cases"></p>
+                <p id="PCR"></p>
             </div>
             <div id="map-container"></div>
         </div>
-        <script src="js/covid-19.js"></script>
         <script src="js/map.js"></script>
         <footer>
             <p>11回目の演習課題 u316075 作山創太朗</p>
